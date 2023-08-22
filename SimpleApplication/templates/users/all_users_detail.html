@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users Detail</title>
+</head>
+<body>
+    <div class="container">
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>User ID</th>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Role</th>
+      </tr>
+    </thead>
+    <tbody>
+	{% for element in user %}
+      <tr>
+        <td>{{element.id}}</td>
+        <td>{{element.uid}}</td>
+		<td>{{element.uname}}</td>
+		<td>{{element.uemail}}</td>
+		<td>{{element.urole}}</td>
+      </tr>
+	  {% endfor %}
+	</tbody>
+</table>
+</div>
+</body>
+</html>
