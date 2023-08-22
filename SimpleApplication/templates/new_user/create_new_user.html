@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create New User</title>
+</head>
+<body>
+<center>
+    <form name="createuser" method="post" action="create_user">
+        {% csrf_token %}
+        <pre>
+            <h2>Create User</h2>
+            Id  :<input type="text" name="userid" value="" width="200"><br>
+            Name:<input type="text" name="username" value="" width="200"><br>
+            Email:<input type="text" name="useremail" value="" width="200"><br>
+            Role:<input type="text" name="userrole" value="" width="200"><br>
+            <input type="submit" name="create" value="Create User" width="300" height="100">
+        </pre>
+
+    </form>
+</center>
+</body>
+</html>
