@@ -35,4 +35,19 @@ A simple Django application to create and read the users information using MySQL
 13. Run "python manage.py migrate" will migrate it into initial models.
 14. Run "python manage.py runserver" -> log with localhost web address. Copy & paste the localhost url in web browser.
 15. Append "hello" to the url, it returns the "Hello, World!" response to the webpage.
+
 ![alt text](./images/hello_world.png)
+
+16. Run "localhost:port/new_user", fill the textbox then "Click to register" button to register.
+
+![alt text](./images/new_user.png)
+
+![alt text](./images/new_user_created.png)
+
+17. Follow step 16 with "users" parameters, the request will retrieve all the users detail.
+
+![alt text](./images/users_table.png)
+
+18. Append the user id to the url parameter, get the specific user id details.
+
+![alt text](./images/user_id_2.png)
